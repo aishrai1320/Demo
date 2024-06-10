@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-07T20:28:13 IST" name="Default suite" finished-at="2024-06-07T20:28:13 IST" duration-ms="63">
+    <groups>
+    </groups>
+    <test started-at="2024-06-07T20:28:13 IST" name="Default test" finished-at="2024-06-07T20:28:13 IST" duration-ms="63">
+      <class name="ppppractice.TestNG111.CreateContact_DP2">
+        <test-method signature="createContactTest(java.lang.String,java.lang.String,long)[pri:0, instance:ppppractice.TestNG111.CreateContact_DP2@304bb45b]" started-at="2024-06-07T20:28:13 IST" name="createContactTest" data-provider="getData" finished-at="2024-06-07T20:28:13 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Deepak]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hr]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[89474296926]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method signature="createContactTest(java.lang.String,java.lang.String,long)[pri:0, instance:ppppractice.TestNG111.CreateContact_DP2@304bb45b]" started-at="2024-06-07T20:28:13 IST" name="createContactTest" data-provider="getData" finished-at="2024-06-07T20:28:13 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sam]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[98345092850]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+        <test-method signature="createContactTest(java.lang.String,java.lang.String,long)[pri:0, instance:ppppractice.TestNG111.CreateContact_DP2@304bb45b]" started-at="2024-06-07T20:28:13 IST" name="createContactTest" data-provider="getData" finished-at="2024-06-07T20:28:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thor]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[stev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[97897654433]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactTest -->
+      </class> <!-- ppppractice.TestNG111.CreateContact_DP2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

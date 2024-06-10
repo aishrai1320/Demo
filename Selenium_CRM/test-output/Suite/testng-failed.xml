@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test2(failed)">
+    <classes>
+      <class name="com.pac1.CreateorgTest">
+        <methods>
+          <include name="createorgTest"/>
+          <include name="passmethod"/>
+          <include name="closedbconnect"/>
+          <include name="executeafterclass"/>
+          <include name="configbc"/>
+          <include name="configBS"/>
+          <include name="config"/>
+          <include name="createOrgwithIndustry"/>
+        </methods>
+      </class> <!-- com.pac1.CreateorgTest -->
+      <class name="com.pac1.CreateContactTest">
+        <methods>
+          <include name="createContact"/>
+          <include name="closedbconnect"/>
+          <include name="passmethod"/>
+          <include name="executeafterclass"/>
+          <include name="configbc"/>
+          <include name="configBS"/>
+          <include name="config"/>
+        </methods>
+      </class> <!-- com.pac1.CreateContactTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" parallel="tests" name="Test1(failed)">
+    <classes>
+      <class name="com.pac1.CreateorgTest">
+        <methods>
+          <include name="createorgTest"/>
+          <include name="passmethod"/>
+          <include name="closedbconnect"/>
+          <include name="configbc"/>
+          <include name="configBS"/>
+          <include name="executeafterclass"/>
+          <include name="config"/>
+          <include name="createOrgwithIndustry"/>
+        </methods>
+      </class> <!-- com.pac1.CreateorgTest -->
+      <class name="com.pac1.CreateContactTest">
+        <methods>
+          <include name="createContact"/>
+          <include name="passmethod"/>
+          <include name="closedbconnect"/>
+          <include name="configBS"/>
+          <include name="configbc"/>
+          <include name="executeafterclass"/>
+          <include name="config"/>
+        </methods>
+      </class> <!-- com.pac1.CreateContactTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
