@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Selenium_CRM</groupId>
   <artifactId>Selenium_CRM</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.2-SNAPSHOT</version>
   <dependencies>
   
   
@@ -22,6 +22,14 @@
     <scope>test</scope>
 </dependency>
 
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.8.0</version>
+</dependency>
+
+
 <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 <dependency>
     <groupId>com.mysql</groupId>
@@ -36,6 +44,14 @@
     <artifactId>poi-ooxml</artifactId>
     <version>4.1.2</version>
 </dependency><!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.4.0</version>
+    <scope>test</scope>
+</dependency>
 
 
 <dependency>

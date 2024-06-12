@@ -44,8 +44,11 @@ public class BaseClass {
 		System.out.println("*****db-connection closed*****");
 	}
 	
-	@BeforeClass
+	//@Parameter("BROWSER")
+	@BeforeClass(groups = {"smokeTest","regression test"})
+	
 	public void configbc() throws Throwable{
+		//String BROWSER =System.getProperty"browser");
 		System.out.println("===launch the browser===");
 		String browserString= flib.getDataFromPropertiesFile("browser");	
 	if(browserString.equals("chrome")) {
@@ -67,14 +70,19 @@ public class BaseClass {
 	
 	
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke test,regression test"})
 	public void config() throws Throwable {
 		System.out.println("---login----");
-		String URL =flib.getDataFromPropertiesFile("url");
-		String USERNAME=flib.getDataFromPropertiesFile("username");
-		String PASSWORD =flib.getDataFromPropertiesFile("password");
+		//String URL =flib.getDataFromPropertiesFile("url");
+		//String USERNAME=flib.getDataFromPropertiesFile("username");
+		//String PASSWORD =flib.getDataFromPropertiesFile("password");
 
-		LoginPage lP =new LoginPage(driver);
+		String BROWSER =System.getProperty("browser","chrome");
+		String URL =System.getProperty("url",flib.getDataFromPropertiesFile("url"));
+		String USERNAME =System.getProperty("username",flib.getDataFromPropertiesFile("username"));
+		String PASSWORD =System.getProperty("password",flib.getDataFromPropertiesFile("password"));
+		
+			LoginPage lP =new LoginPage(driver);
 		lP.loginToapp(URL, USERNAME, PASSWORD);
 	}
 @AfterMethod
